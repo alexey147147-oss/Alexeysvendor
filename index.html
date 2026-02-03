@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Vendor Sale</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+      padding: 50px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .vendor-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: #ff4b2b;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff416c;
+    }
+    .link-section {
+      margin-top: 30px;
+      display: none;
+    }
+    .link-section a {
+      color: #00ffcc;
+      word-break: break-all;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buy My Vendor for $10</h1>
+  <div class="vendor-box">
+    <h2>Vendor Name</h2>
+    <p>Price: $10</p>
+    <p>Send $10 to Cash App: <strong>$AlexeyBondar</strong></p>
+    <a href="https://cash.app/$AlexeyBondar"><button>Pay with Cash App</button></a>
+  </div>
+
+  <div class="link-section" id="linkSection">
+    <h3>Your Vendor Link:</h3>
+    <a href="https://your-vendor-link.com" target="_blank" id="vendorLink">https://your-vendor-link.com</a>
+    <p>Copy and paste this to visit your vendor site!</p>
+  </div>
+
+  <script>
+    // This is a placeholder simulation.
+    // In a real scenario, you'd use a payment confirmation system.
+    // For now, let's simulate showing the link after some action.
+    const button = document.querySelector('button');
+    button.addEventListener('click', () => {
+      // Simulate a "payment confirmation" after clicking the button.
+      // In reality, you'd replace this with a callback from a payment processor.
+      setTimeout(() => {
+        document.getElementById('linkSection').style.display = 'block';
+      }, 2000);  // Simulates a delay like "payment processing"
+    });
+  </script>
+</body>
+</html>
